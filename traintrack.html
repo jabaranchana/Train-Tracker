@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Station Capacity Tracker</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #2190f1; color: #333; max-width: 800px; margin: 20px auto; padding: 20px; }
+        h1 { color: #012c38; text-align: center; }
+        input, button { padding: 10px; font-size: 16px; margin: 5px 0; width: calc(100% - 24px); display: block; }
+        input { border: 1px solid #ddd; border-radius: 5px; }
+        button { background: #461ee7; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #3498db; }
+        .station-list { list-style: none; padding: 0; }
+        .station-item { background: #ecf0f1; padding: 15px; margin-bottom: 10px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .station-item.exceeded { background: #ed9507; color: white; }
+    </style>
+</head>
+<body>
+    <h1>Station Capacity Tracker</h1>
+    <input type="text" id="station-name" placeholder="Station Name">
+    <input type="number" id="station-capacity" placeholder="Maximum Capacity">
+    <input type="number" id="trains-at-station" placeholder="Number of Trains">
+    <button id="add-station">Add Station</button>
+    <ul id="station-list" class="station-list"></ul>
+<script src="traintrack.js"></script>
+</body>
+</html>
